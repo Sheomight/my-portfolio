@@ -34,3 +34,19 @@ for (let button of buttons) {
     }
   });
 }
+
+// import Swiper from 'swiper';
+// import { Pagination } from 'swiper/modules';
+
+const swiperElement = document.querySelector('.swiper');
+const pagination = document.querySelector('.swiper-pagination')
+
+
+const swiper = new Swiper(swiperElement, {
+  loop: true,
+  pagination: {
+    el: pagination,
+  }
+  // modules: [Pagination],
+
+});
