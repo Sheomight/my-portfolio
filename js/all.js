@@ -38,15 +38,30 @@ for (let button of buttons) {
 // import Swiper from 'swiper';
 // import { Pagination } from 'swiper/modules';
 
-const swiperElement = document.querySelector('.swiper');
-const pagination = document.querySelector('.swiper-pagination')
-
-
-const swiper = new Swiper(swiperElement, {
+const testimonialSwiper = new Swiper('.testimonial__swiper', {
   loop: true,
   pagination: {
-    el: pagination,
+    el: '.testimonial__swiper-pagination',
+    clickable: true
   }
-  // modules: [Pagination],
+});
 
+const blogSwiper = new Swiper('.blog__swiper', {
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 10,
+  pagination: {
+    el: '.blog__swiper-pagination',
+    clickable: true
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
+  },
 });
