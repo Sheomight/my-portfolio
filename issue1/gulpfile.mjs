@@ -27,4 +27,4 @@ const watchChanges = () => {
 }
 
 export const serve = gulp.task('serve', gulp.series(clear, fonts, images, html, scss, scripts, watchChanges))
-export const build = gulp.task('build', gulp.series(clear, fonts, images, html, scss, scripts));
+export const build = gulp.task('build', gulp.series(clear, fonts, images, html, scss, scripts))

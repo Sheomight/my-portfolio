@@ -23,7 +23,7 @@
           <a href="#portfolio" class="menu__item">Портфолио</a>
           <a href="#blog" class="menu__item">Блог</a>
           <a href="#services" class="menu__item">Услуги</a>
-          <a href="#contact" class="btn">Связаться со мной</a>
+          <a href="#contact" class="menu__item btn">Связаться со мной</a>
         </nav>
         <button class="burger">
           <div class="burger__box">
@@ -112,10 +112,8 @@
             <div class="progress-section__information ">
               <h2 class="title">Рабочий процесс</h2>
               <div class="text-grup">
-                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu, varius eget
-                  velit non, laoreet imperdiet orci. Mauris ultrices eget lorem ac vestibulum. Suspendis imperdiet</p>
-                <p class="text text_indented">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu,
-                  varius eget velit non.</p>
+                <p class="text">В процессе работы мы проведём анализ и изучение требований для вашего проекта. Выберем подходящий дизайн для пользовательского интерфейса, и определимся со сроками в которые нужно выполнить проект.</p>
+                <p class="text text_indented">После приступим к разработке клиентской части приложения, его тестированию и отладке</p>
               </div>
             </div>
             <div class="progress-section__cards cards">
@@ -124,28 +122,28 @@
                   <div class="cards__icon-img cards__icon-img_note"></div>
                 </div>
                 <h3 class="cards__title title">1. Аналитика</h3>
-                <p class="cards__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="cards__text">Изучение бизнес-требования и потребности пользователей.</p>
               </div>
               <div class="cards__item">
                 <div class="cards__icon">
                   <div class="cards__icon-img cards__icon-img_graph"></div>
                 </div>
                 <h3 class="cards__title title">2. Проектирование</h3>
-                <p class="cards__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="cards__text">Разработка структуры приложения, определение элементов интерфейса и их взаимодействия.</p>
               </div>
               <div class="cards__item cards__item_indented">
                 <div class="cards__icon">
                   <div class="cards__icon-img cards__icon-img_pen"></div>
                 </div>
                 <h3 class="cards__title title">3. Разработка</h3>
-                <p class="cards__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <p class="cards__text">Создания интерфейса, добавления интерактивных элементов и функционала. </p>
               </div>
               <div class="cards__item">
                 <div class="cards__icon">
                   <div class="cards__icon-img cards__icon-img_laptop"></div>
                 </div>
                 <h3 class="cards__title title">4. Тестирование</h3>
-                <p class="cards__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="cards__text">Проверка работоспособности приложения и исправление ошибок.</p>
               </div>
             </div>
           </div>
@@ -269,52 +267,83 @@
         <div class="container">
           <div class="blog__content">
             <h2 class="blog__titile title">Блог</h2>
-            <p class="blog__text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis suscipit
-              unde cumque
-              corporis quis nesciunt rerum quibusdam neque voluptas.</p>
-            <div class="blog__list blog-list">
-              <a class="blog-list__item blog-item">
-                <img src="./assets/images/blog1.png" alt="Превью записи блога" class="blog-item__img">
-                <div class="blog-item__content">
-                  <span class="blog-item__info">20 Oct, 2020 / 246 Comments</span>
-                  <h3 class="blog-item__title title">Lorem ipsum dolor sit consea. Nulla purus arcu</h3>
+            <p class="blog__text text">В данном разделе я делясь своим опытом и знаниями в области frontend разработки. Здесь вы найдете статьи, уроки, советы и решения по актуальным темам в мире веб-разработки. Узнайте о новых технологиях, инструментах и лучших практиках для создания красивых и функциональных веб-приложений.</p>
+            <div class="blog__swiper swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a class="blog-list__item blog-item">
+                    <img src="./assets/images/blog1.png" alt="Превью записи блога" class="blog-item__img">
+                    <div class="blog-item__content">
+                      <span class="blog-item__info">20 Oct, 2020 / 246 Comments</span>
+                      <h3 class="blog-item__title title">10 важных технологий для frontend разработчика</h3>
+                    </div>
+                  </a>
                 </div>
-              </a>
-              <a class="blog-list__item blog-item">
-                <img src="./assets/images/blog2.png" alt="Превью записи блога" class="blog-item__img">
-                <div class="blog-item__content">
-                  <span class="blog-item__info">20 Oct, 2020 / 246 Comments</span>
-                  <h3 class="blog-item__title title">Lorem ipsum dolor sit consea. Nulla purus arcu</h3>
+                <div class="swiper-slide">
+                  <a class="blog-list__item blog-item">
+                    <img src="./assets/images/blog2.png" alt="Превью записи блога" class="blog-item__img">
+                    <div class="blog-item__content">
+                      <span class="blog-item__info">20 Oct, 2020 / 246 Comments</span>
+                      <h3 class="blog-item__title title">Как создать адаптивный дизайн с помощью Flexbox</h3>
+                    </div>
+                  </a>
                 </div>
-              </a>
-              <a class="blog-list__item blog-item">
-                <img src="./assets/images/blog3.png" alt="Превью записи блога" class="blog-item__img">
-                <div class="blog-item__content">
-                  <span class="blog-item__info">20 Oct, 2020 / 246 Comments</span>
-                  <h3 class="blog-item__title title">Lorem ipsum dolor sit consea. Nulla purus arcu</h3>
+                <div class="swiper-slide">
+                  <a class="blog-list__item blog-item">
+                    <img src="./assets/images/blog3.png" alt="Превью записи блога" class="blog-item__img">
+                    <div class="blog-item__content">
+                      <span class="blog-item__info">20 Oct, 2020 / 246 Comments</span>
+                      <h3 class="blog-item__title title">5 самых полезных JavaScript библиотек</h3>
+                    </div>
+                  </a>
                 </div>
-              </a>
-              <a class="blog-list__item blog-item">
-                <img src="./assets/images/blog4.png" alt="Превью записи блога" class="blog-item__img">
-                <div class="blog-item__content">
-                  <span class="blog-item__info">20 Oct, 2020 / 246 Comments</span>
-                  <h3 class="blog-item__title title">Lorem ipsum dolor sit consea. Nulla purus arcu</h3>
+                <div class="swiper-slide">
+                  <a class="blog-list__item blog-item">
+                    <img src="./assets/images/blog4.png" alt="Превью записи блога" class="blog-item__img">
+                    <div class="blog-item__content">
+                      <span class="blog-item__info">20 Oct, 2020 / 246 Comments</span>
+                      <h3 class="blog-item__title title">Лучшие практики по оптимизации</h3>
+                    </div>
+                  </a>
                 </div>
-              </a>
-            </div>
-            <div class="blog__slide-controllers slide-controllers">
-              <div class="slide-controllers__group">
-                <label for="blog-radio1" class="slide-controllers__label slide-controllers__label_active"></label>
-                <input id="blog-radio1" type="radio" name="blog" class="slide-controllers__btn" checked>
+                <div class="swiper-slide">
+                  <a class="blog-list__item blog-item">
+                    <img src="./assets/images/blog3.png" alt="Превью записи блога" class="blog-item__img">
+                    <div class="blog-item__content">
+                      <span class="blog-item__info">20 Oct, 2020 / 246 Comments</span>
+                      <h3 class="blog-item__title title">5 самых полезных JavaScript библиотек</h3>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a class="blog-list__item blog-item">
+                    <img src="./assets/images/blog2.png" alt="Превью записи блога" class="blog-item__img">
+                    <div class="blog-item__content">
+                      <span class="blog-item__info">20 Oct, 2020 / 246 Comments</span>
+                      <h3 class="blog-item__title title">Как создать адаптивный дизайн с помощью Flexbox</h3>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a class="blog-list__item blog-item">
+                    <img src="./assets/images/blog3.png" alt="Превью записи блога" class="blog-item__img">
+                    <div class="blog-item__content">
+                      <span class="blog-item__info">20 Oct, 2020 / 246 Comments</span>
+                      <h3 class="blog-item__title title">5 самых полезных JavaScript библиотек</h3>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a class="blog-list__item blog-item">
+                    <img src="./assets/images/blog1.png" alt="Превью записи блога" class="blog-item__img">
+                    <div class="blog-item__content">
+                      <span class="blog-item__info">20 Oct, 2020 / 246 Comments</span>
+                      <h3 class="blog-item__title title">10 важных технологий для frontend разработчика</h3>
+                    </div>
+                  </a>
+                </div>
               </div>
-              <div class="slide-controllers__group">
-                <label for="blog-radio2" class="slide-controllers__label"></label>
-                <input id="blog-radio2" type="radio" name="blog" class="slide-controllers__btn">
-              </div>
-              <div class="slide-controllers__group">
-                <label for="blog-radio3" class="slide-controllers__label"></label>
-                <input id="blog-radio3" type="radio" name="blog" class="slide-controllers__btn">
-              </div>
+              <div class="blog__swiper-pagination swiper-pagination"></div>
             </div>
           </div>
         </div>
@@ -327,31 +356,23 @@
             <div class="services__information ">
               <h2 class="services__title title">Чем я занимаюсь?</h2>
               <div class="services__text-group text-group">
-                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu, varius eget
-                  velit non, laoreet imperdiet orci. Mauris ultrices eget lorem ac vestibulum. Suspendis imperdiet,</p>
-                <p class="text text_indented">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu,
-                  varius eget velit non.</p>
+                <p class="text">Как frontend разработчик, я занимаюсь созданием пользовательского интерфейса для веб-сайтов и веб-приложений. Моя работа включает в себя написание HTML, CSS и JavaScript кода для отображения контента и обеспечения пользовательских взаимодействий. Я занимаюсь адаптивной версткой, чтобы гарантировать, что мой код будет выглядеть хорошо на всех устройствах и экранах. </p>
+                <p class="text text_indented">Также я занимаюсь оптимизацией производительности интерфейса, чтобы обеспечить быструю загрузку и отзывчивость веб-страниц. В моей работе также важно следить за последними тенденциями веб-разработки и обновлять свои навыки для создания современных и инновационных пользовательских интерфейсов..</p>
               </div>
               <a href="#contact" class="services__btn btn">Связаться со мной</a>
             </div>
             <div class="services__cards services-cards">
               <div class="services-cards__card">
                 <h3 class="services-cards__title title">Верстка</h3>
-                <p class="services-cards__text text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum,
-                  nulla laborum animi consequatur vero soluta sint quia ab numquam neque ipsa qui facilis, rerum quo
-                  ipsum aut rem consequuntur cupiditate.</p>
+                <p class="services-cards__text text">Вёрстка - это процесс создания макета сайта или приложения, на котором будут размещаться элементы интерфейса (HTML, CSS). Фронтенд-разработчик использует инструменты и техники вёрстки для создания статической или динамической разметки веб-страниц.</p>
               </div>
               <div class="services-cards__card">
                 <h3 class="services-cards__title title">Реализация frontend функционала</h3>
-                <p class="services-cards__text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-                  dolor error aut officia. Sapiente sunt aliquid dicta alias deserunt nemo, eaque nihil fugiat,
-                  provident aut corrupti, assumenda dolores excepturi aliquam!</p>
+                <p class="services-cards__text text">Разработка frontend-функционала включает в себя создание интерактивных элементов интерфейса, таких как кнопки, формы, слайдеры и т.д., с использованием языков программирования (JavaScript) и библиотек (jQuery, React и др.). Фронтенд-разработчики также занимаются разработкой и оптимизацией анимаций, валидацией форм и обработкой пользовательского ввода.</p>
               </div>
               <div class="services-cards__card">
                 <h3 class="services-cards__title title">Реализация взаимодействия с данными</h3>
-                <p class="services-cards__text text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Laboriosam, aspernatur sapiente fugit vel in amet odit iste ex ea quia, provident voluptas consectetur
-                  quae eum corrupti harum aut velit maxime.</p>
+                <p class="services-cards__text text">Реализация взаимодействия с сервером подразумевает разработку и настройку API, которые будут использоваться для обмена данными между клиентом (фронтендом) и сервером (бэкендом). Это включает в себя такие задачи, как выбор и настройка протокола (REST, SOAP), определение структуры и формата данных, а также тестирование и отладка взаимодействия между клиентом и сервером.</p>
               </div>
             </div>
           </div>
@@ -363,8 +384,7 @@
         <div class="container">
           <div class="clients__content">
             <h2 class="title">Довольные клиенты</h2>
-            <p class="text">There are many variations of passages of Lorem Ipsum available,
-              but the majority have suffered alteration.</p>
+            <p class="text">Здесь вы можете ознакомиться с некоторыми клиентами, с которыми я уже работал.</p>
             <div class="clients__list">
               <img class="clients__item" src="./assets/images/logos/google.svg" alt="">
               <img class="clients__item" src="./assets/images/logos/dribbble.svg" alt="">
@@ -381,30 +401,33 @@
       <div class="wrapper">
         <div class="container">
           <div class="testimonial__content">
-            <h2 class="testimonial__title title">Свидетельство</h2>
-            <p class="testimonial__subtitle">There are many variations of passages of Lorem Ipsum available,
-              but the majority have suffered alteration.</p>
-            <p class="testimonial__text text">“Nulla efficitur nisl sit amet velit malesuada dapibus. Duis mollis felis
-              turpis, nec semper odio convallis at. Curabitur imperdiet semper arcu, a finibus arcu suscipit in. Donec
-              quis placerat nibh. Maecenas est purus, eleifend ac cursus sed, tincidunt ut sapien.
-              Morbi ornare elit at libero suscipit porta.”</p>
-            <p class="testimonial__author-name">Esther Howard</p>
-            <p class="testimonial__author-info">Managing Director, ABC company</p>
-
-            <div class="testimonial__slide-controllers slide-controllers">
-              <div class="slide-controllers__group">
-                <label for="testimonials-radio1"
-                  class="slide-controllers__label slide-controllers__label_active"></label>
-                <input id="testimonials-radio1" type="radio" name="testi" class="slide-controllers__btn" checked>
+            <h2 class="testimonial__title title">Отзывы клиентов</h2>
+            <p class="testimonial__subtitle">Здесь представлены отзывы некоторых из клиентов</p>
+            <div class="testimonial__swiper swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <p class="testimonial__text text">“Я, хочу выразить свою благодарность и признательность за профессиональную и качественную работу над нашим проектом.
+                    С самого начала работы над проектом, была продемонстрирована высокую квалификацию и умение быстро вникать в суть задач. Разработчик всегда был готов предложить оптимальные решения, учитывая как функциональные требования, так и ограничения по дизайну и производительности.
+                    Особенно хочется отметить его коммуникативные навыки и способность работать в команде. Благодаря его усилиям, мы смогли успешно реализовать все наши идеи и создать удобный и привлекательный интерфейс для наших пользователей.”</p>
+                  <p class="testimonial__author-name">Эстер Ховард</p>
+                  <p class="testimonial__author-info">Директор, ABC company</p>
+                </div>
+                <div class="swiper-slide">
+                  <p class="testimonial__text text">“Я, хочу выразить свою благодарность и признательность за профессиональную и качественную работу над нашим проектом.
+                    С самого начала работы над проектом, была продемонстрирована высокую квалификацию и умение быстро вникать в суть задач. Разработчик всегда был готов предложить оптимальные решения, учитывая как функциональные требования, так и ограничения по дизайну и производительности.
+                    Особенно хочется отметить его коммуникативные навыки и способность работать в команде. Благодаря его усилиям, мы смогли успешно реализовать все наши идеи и создать удобный и привлекательный интерфейс для наших пользователей.”</p>
+                  <p class="testimonial__author-name">Эстер Ховард</p>
+                  <p class="testimonial__author-info">Директор, ABC company</p>
+                </div>
+                <div class="swiper-slide">
+                  <p class="testimonial__text text">“Я, хочу выразить свою благодарность и признательность за профессиональную и качественную работу над нашим проектом.
+                    С самого начала работы над проектом, была продемонстрирована высокую квалификацию и умение быстро вникать в суть задач. Разработчик всегда был готов предложить оптимальные решения, учитывая как функциональные требования, так и ограничения по дизайну и производительности.
+                    Особенно хочется отметить его коммуникативные навыки и способность работать в команде. Благодаря его усилиям, мы смогли успешно реализовать все наши идеи и создать удобный и привлекательный интерфейс для наших пользователей.”</p>
+                  <p class="testimonial__author-name">Эстер Ховард</p>
+                  <p class="testimonial__author-info">Директор, ABC company</p>
+                </div>
               </div>
-              <div class="slide-controllers__group">
-                <label for="testimonials-radio2" class="slide-controllers__label"></label>
-                <input id="testimonials-radio2" type="radio" name="testi" class="slide-controllers__btn">
-              </div>
-              <div class="slide-controllers__group">
-                <label for="testimonials-radio3" class="slide-controllers__label"></label>
-                <input id="testimonials-radio3" type="radio" name="testi" class="slide-controllers__btn">
-              </div>
+              <div class="testimonial__swiper-pagination swiper-pagination"></div>
             </div>
           </div>
         </div>
@@ -521,6 +544,7 @@
       </div>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./js/all.js"></script>
 </body>
 
