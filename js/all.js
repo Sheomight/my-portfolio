@@ -35,9 +35,6 @@ for (let button of buttons) {
   });
 }
 
-// import Swiper from 'swiper';
-// import { Pagination } from 'swiper/modules';
-
 const testimonialSwiper = new Swiper('.testimonial__swiper', {
   loop: true,
   pagination: {
